@@ -49,7 +49,7 @@ body {
 .pin-box {
     width: 30px;
     height: 30px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(242, 241, 232);
     border-radius: 5px;
     display: inline-block;
     margin: 0 5px;
@@ -72,6 +72,8 @@ body {
 
 @media (max-width: 480px) {
     #screen { max-width: 250px; }
+    .pin-box {width: 10px; height: 10px; font-size: 0.3em; border-radius: 1px; line-height: 16px}
+    #pin-input {font-size: 0.3em}
     #keyboard { grid-template-columns: repeat(3, 1fr); }
     .key { padding: 12px; }
 }
