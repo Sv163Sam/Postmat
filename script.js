@@ -63,6 +63,7 @@ function deleteDigit() {
 function checkPin() {
     if (locked) return;
     if (correctPins.includes(pin)) {
+        clearPin()
         window.location.href = 'success.html';
     } else {
         attempts++;
